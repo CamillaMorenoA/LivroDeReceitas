@@ -11,4 +11,21 @@ public class Categoria {
     private Long idCategoria;
 
     private String nome;
+
+    public Long getIdCategoria() {
+        return idCategoria;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setIdCategoria(Long idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
+
