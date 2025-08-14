@@ -21,4 +21,8 @@ public class CategoriaService {
     public List<Categoria> buscarPorNome(String nome) {
         return categoriarepository.findByNomeContainingIgnoreCase(nome);
     }
+
+    public Categoria criar(Categoria categoria){
+        return categoriarepository.save(categoria);
+    }
 }

@@ -25,4 +25,9 @@ public class CategoriaController {
         return service.buscarPorNome(nome);
     }
 
+    @PostMapping()
+    public Categoria criarCategoria(@RequestBody Categoria categoria){
+        return service.criar(categoria);
+    }
+
 }
